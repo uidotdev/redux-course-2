@@ -10,9 +10,6 @@ export default function App() {
     dispatch(handleInitialData())
   }, [dispatch])
 
-  const store = useSelector((store) => store)
-  console.log('Store', store)
-
   return (
     <div className='container'>
       {loading === true
