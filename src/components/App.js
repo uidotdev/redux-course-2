@@ -4,6 +4,7 @@ import { handleInitialData } from '../actions/shared'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Leaderboard from './Leaderboard'
 import Dashboard from './Dashboard'
+import AddPoll from './AddPoll'
 
 export default function App() {
   const dispatch = useDispatch()
@@ -18,7 +19,7 @@ export default function App() {
       <div className='container'>
         {loading === true
           ? null
-          : <Dashboard />
+          : <AddPoll />
         }
       </div>
     </Router>
